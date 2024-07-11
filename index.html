@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7726b6cf86.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <link rel="shorcut icon" href="./favicon.ico" type="imagex/x-icon">
+    <link href="./css/estilos.css" rel="stylesheet"> 
+</head>
+<body>
+
+    <!-- Cabecera del documento -->
+    <header class="header">
+        <nav class="navegacion">
+            <a class="anclaLogo" href="index.html">
+                <i class="fas fa-film" ></i>
+                <span>Libros</span>
+            </a>
+            <ul class="listaNav">
+                <li class="listaItem">
+                    <a class="linkNav" href="./pages/buscados.html">Buscador</a>
+                </li>
+                <li class="listaItem">
+                    <a class="linkNav" href="#tendencias">Tendencias</a>
+                </li>
+                <li class="listaItem">
+                    <a class="linkNav" href="./pages/registrarse.html">Registrarse</a>
+                </li>
+                <li class="listaItem">
+                    <a class="linkNav iniciarSesion" href="./pages/ingresar.html">Ingresar</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fin Cabecera del documento -->
+
+    <main id="main" class="main">
+        <section class="sectionPrincipal" data-aos="zoom-in" data-aos-duration="1000">
+            <h1 class="tituloPrincipal">Libros e historias ilimitadas<br>en un solo lugar.</h1>
+            <h2 class="subtituloPrincipal">Difrutalos donde quieras.<br>Cancela en cualquier momento.</h2>
+            <a class="botonRegistrarse" href="./pages/registrarse.html">Registrarse</a>
+        </section>
+        <section id="tendencias" class="peliculasTendencia" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+            <h3 class="tituloSection">Los más leídos actualmente</h3>
+            <div id="peliculas" class="peliculas">
+
+            </div>
+            <button class="boton anterior">Anterior</button>
+            <button class="boton anterior">Siguiente</button>
+        </section>
+        <hr>      
+        <section class="peliculasAclamadas" data-aos="zoom-in" data-aos-duration="1000">
+            <h3 class="tituloSection">Los éxitos más aclamados</h3>
+            <div id="aclamadas" class="aclamadas">
+
+            </div>
+        </section> 
+    </main>
+
+    <footer class="footer">
+        <nav class="navegacion">
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="">Términos y condiciones</a></li>
+                <li class="listaItem"><a class="linkNav" href="">Preguntas frecuentes</a></li>
+                <li class="listaItem"><a class="linkNav" href="">Ayuda</a></li>
+                <li class="listaItem"><a class="linkNav administradorPeliculas" href="pages/crud.html">Administrador de Libros</a></li>
+            </ul>
+        </nav>
+    </footer>    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+<script src="./js/busca_libros.js"></script>
+
+</body>
+
+</html>
